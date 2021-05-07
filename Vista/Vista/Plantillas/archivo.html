@@ -8,12 +8,14 @@
 </head>
 <body>
   
-    <form  method="POST" style="position: absolute;  top: 400px; left: 700px;">
+    <form action="add" method="POST" style="position: absolute;  top: 400px; left: 700px;">{% csrf_token %}
       <input type="file" name="CARGAR_ARCHIVO" id="" class="btn btn-dark" >
       {% csrf_token %}
       <button type="submit" style="border:none; position: relative; left: -270px; top: 50px; height: 50px; width: 200px; " class="btn btn-success">ENVIAR</button>
     </form>
     
  
+
+    
 </body>
 </html>
