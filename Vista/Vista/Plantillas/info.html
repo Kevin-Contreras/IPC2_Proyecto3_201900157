@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>OPERACIONES</title>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+   
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-link" href="cargarArchivo/">CARGAR ARCHIVO</a>
+         
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#">AYUDA</a>
+        </li>
+   
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <h1 style="text-align:center;">INFORMACION</h1>
+  <div class="alert alert-dark" style="width: 600px; height: 150px; position: relative; top: 250px; left: 650px; ">
+<button  class="btn btn-primary" style="margin: 10px;" onclick="alert('KEVIN ALEXIS LOPEZ CONTRERAS CARNET 201900157')"><a href="" style="color: rgb(255, 255, 255); text-decoration:none;">INFORMACION DEL ESTUDIANTE</a> </button>
+<button  class="btn btn-primary" style="margin: 10px;"><a href='{% static "k.pdf" %}' download='{% static "k.pdf" %}'>DOCUMENTACION</a> </button>
+  </div>
+</body>
+</html>
