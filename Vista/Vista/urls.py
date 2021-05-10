@@ -15,18 +15,18 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Vista.view import vista,archivo1,archivo2,operaciones,filtar,filtar2,info,info2
+from Vista.view import view
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',vista),
-    path('cargarArchivo/',archivo1),
-    path('/',archivo2),
-    path("operaciones/",operaciones),
-    path("operaciones/filtarDatos",filtar),
-    path("operaciones/filtarError",filtar2),
-    path("info/",info),
-    path("info2/",info),
+    path('',view.vista),
+    path('cargarArchivo/',view.archivo1),
+    path('/',view.archivo2),
+    path("operaciones/",view.operaciones),
+    path("operaciones/filtarDatos",view.filtar),
+    path("operaciones/filtarError",view.filtar2),
+    path("info/",view.info),
+    path("info2/",view.info),
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) 
