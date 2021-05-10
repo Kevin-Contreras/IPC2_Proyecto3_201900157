@@ -15,13 +15,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from Vista.view import vista,archivo1,archivo2
+from Vista.view import vista,archivo1,archivo2,operaciones,filtar,filtar2
 from django.conf import settings
 from django.conf.urls.static import static
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('',vista),
     path('cargarArchivo/',archivo1),
-    path('cargarArchivo/add',archivo2),
+    path('/',archivo2),
+    path("operaciones/",operaciones),
+    path("operaciones/filtarDatos",filtar),
+    path("operaciones/filtarError",filtar2),
 ]
 urlpatterns += static(settings.MEDIA_URL,document_root=settings.MEDIA_ROOT) 

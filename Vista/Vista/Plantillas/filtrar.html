@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Cargar Archivo</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <title>Filtrar</title>
 </head>
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -15,10 +14,11 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-       
-        <li class="nav-item">
-          <a class="nav-link" href="operaciones/">PETICIONES</a>
+        <li class="nav-item active">
+          <a class="nav-link" href="cargarArchivo/">CARGAR ARCHIVO</a>
+         
         </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="#">AYUDA</a>
         </li>
@@ -27,13 +27,19 @@
       </ul>
     </div>
   </nav>
-    <form action="/" method="POST" style="position: absolute;  top: 400px; left: 700px;">
-    
-      <input type="file" name="CARGAR_ARCHIVO" id="" class="btn btn-dark" >
-    
-      <button type="submit" style="border:none; position: relative; left: -270px; top: 50px; height: 50px; width: 200px; " class="btn btn-success">ENVIAR</button>
-    </form>
-    
-
+<div style="width: 500px; margin: auto; margin-top: 400px;">
+    <form>
+      <div class="form-group">
+        <label for="exampleInputEmail1">FILTAR POR FECHA</label>
+        <input type="date" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+        
+      </div>
+  
+ 
+  
+   
+    <button type="submit" class="btn btn-primary">ENVIAR</button>
+  </form>
+  </div>
 </body>
 </html>

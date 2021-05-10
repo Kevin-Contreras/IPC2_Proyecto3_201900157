@@ -1,3 +1,5 @@
+  
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,7 +22,7 @@
          
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">PETICIONES</a>
+          <a class="nav-link" href="operaciones/">PETICIONES</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">AYUDA</a>
@@ -31,11 +33,13 @@
     </div>
   </nav>
   <form method="POST">
+    
     <button type="submit" style="border:none; position: relative; left: 400px; top: 50px; height: 50px; width: 200px; " class="btn btn-success">ENVIAR</button>
       <textarea style="border:none; position: absolute; left: 250px; top: 250px; height: 500px; width: 500px;" cols="40" rows="3"></textarea>
     
   </form>
   <form method="POST">
+    
     <button type="reset" style="border:none; position: relative; left: 1200px; top: 0px; height: 50px; width: 200px; " class="btn btn-danger" >RESET</button>
     <textarea style="border:none; position: absolute; left: 1050px; top: 250px; height: 500px; width: 500px;" cols="40" rows="3"></textarea>
  
